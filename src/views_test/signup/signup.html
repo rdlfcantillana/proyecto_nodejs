@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .titulo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 45px;
+        font-weight: 800;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh
+    }
+    /* body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; 
+    } */
+    form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 25px;
+        box-shadow: 0 5px 10px;
+        border-radius: 10px;
+    }
+    form .title{
+        font-size: 35px;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    form label{
+        margin-bottom: 25px;
+    }
+    form label .fa-regular{
+        font-size: 20px;
+        color: black;
+        margin-right: 10px;
+    }
+    form label .fa-solid{
+        font-size: 20px;
+        color: black;
+        margin-right: 10px;
+    }
+    form label input{
+        outline: none;
+        height: 35px;
+        /* border:none; */
+        color: black;
+        border-style: none;
+        padding: 0 5px;
+        font-size: 18px;
+        border-radius: 10px;
+        background-color: #e2e2e2;
+    }
+    form label input::placeholder{
+        color: #252525;
+    }
+    form .link{
+        color:#252525;
+        margin: 10px;
+    }
+    form button{
+        border-radius: 15px;
+        color: black;
+        border: none;
+        background-color: #e2e2e2;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 20px;
+    }</style>
+    <title>Sing In</title>
+</head>
+<body>
+    <h1 class="titulo">Restaurant</h1>
+    <div class="container">
+        <form action="">
+            <h2 class="title">Register</h2>
+            <label>
+                <i class="fa-solid fa-user fa-bounce"></i>
+                <input placeholder="Username" type="text" id="username">
+            </label>
+            <label>
+                <i class="fa-solid fa-key fa-bounce"></i>
+                <input placeholder="Password" type="password" id="password">
+            </label>
+            <label>
+                <i class="fa-solid fa-key fa-bounce"></i>
+                <input placeholder="Confirm Password" type="password" id="password">
+            </label>
+
+            <button size id="button" class="button"><b>Register</b></button>
+            <a href="http://localhost:3000/login" class="link"><b>Log in now</b></a>
+        </form>
+    </div>
+</body>
+</html>
